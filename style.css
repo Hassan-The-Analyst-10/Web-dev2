@@ -1,0 +1,177 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+}
+
+header img {
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* Add Expense Section */
+.add-expense-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.add-expense-section h2 {
+    margin-top: 0;
+}
+
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/* Direct child selector */
+.add-expense-section > form {
+    max-width: 500px;
+}
+
+
+/* Focus pseudo-class */
+input:focus,
+select:focus {
+    outline: 2px solid #3498db;
+    border-color: #3498db;
+}
+
+
+/* Negation pseudo-class */
+input:not([type="date"]) {
+    background-color: #fafafa;
+}
+
+
+/* Button */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #27ae60;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+
+/* Expenses Section */
+.expenses-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+
+/* Colored table header */
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Table row hover */
+tbody tr:hover {
+    background-color: #dfe6e9;
+}
+
+
+/* Descendant selector */
+.expenses-section td {
+    font-size: 15px;
+}
+
+
+/* Instructions */
+.instructions-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Multimedia */
+.multimedia-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.multimedia-section iframe {
+    max-width: 100%;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+}
